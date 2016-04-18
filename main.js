@@ -20,5 +20,5 @@ for(let segment of segobj.segments){
     console.log('segment:'+segment['Name']);        
     
 }
-*/
+*/ 
 
