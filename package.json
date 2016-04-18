@@ -2,7 +2,10 @@
   "name": "jsplayground",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "engines": {
+    "node": "5.9.1"
+  },
+  "main": "Helloworld.js",
   "dependencies": {
     "http-server": "^0.9.0",
     "babel-cli": "^6.6.5",
