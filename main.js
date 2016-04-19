@@ -37,7 +37,7 @@ let segobj = new segments.SegmentService();
             console.log('segwrapList');        
             console.log(segwrapList);
             console.log('segment attribute vals in service');        
-            console.log(segobj.segments);
+            console.log(segobj.segments[0]);
         });
         
         //
@@ -50,7 +50,7 @@ let segobj = new segments.SegmentService();
 app.set('port', (process.env.PORT || 5000));
 
 app.get('/', function(request, response) {
-  response.send('<div>The segments for given org are<br>'+ segobj.segments+'</div>');
+  response.send('<div>The segments for given org are<br>'+ segobj.segments[0]+'</div>');
   // response.send('hello world');
 
   //response.render('pages/index');
