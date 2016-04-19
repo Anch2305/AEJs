@@ -4,6 +4,7 @@ let segments = require('SegmentService.js');
 let express = require('express');
 let app = express();
 let conn = new jsforce.Connection();
+
 //let segwrap = new segments.SegmentService.SegmentDefinitionWrapper();
 let segwrapList = [];
 let segobj = new segments.SegmentService();
@@ -62,6 +63,7 @@ app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
 //Get 
+
 //console.log('segments:'+segments.SegmentService.about());
 /*
 let segobj = new segments.SegmentService();
