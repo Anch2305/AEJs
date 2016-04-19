@@ -3,7 +3,7 @@ let jsforce = require('jsforce');
 let segments = require('SegmentService.js');
 
 let conn = new jsforce.Connection();
-conn.login('anchana.rajamathe@kenandy.com', 'KndyNov15', function(err, res) {
+conn.login('anchana.rajamathe@kenandy.com', 'KndyNov1518U11M0sNYDqpspJfHQATHmUH', function(err, res) {
   if (err) { return console.error(err); }
   conn.query('SELECT Id, Name FROM AnchNS__Accounting_Rule__c limit 1', function(err, res) {
     if (err) { return console.error(err); }
