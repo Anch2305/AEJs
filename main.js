@@ -50,9 +50,9 @@ let segobj = new segments.SegmentService();
 app.set('port', (process.env.PORT || 5000));
 
 app.get('/', function(request, response) {
-   for(let rec of segobj.segments ){
-     response.send('<div>The segment details for given org are<br>'+ rec+'</div>');       
-   }
+  // for(let rec of segobj.segments ){
+     response.send('<div>The segment details for given org are<br>'+ JSON.stringify(segobj.segments)+'</div>');       
+  // }
   // response.send('hello world');
 
   //response.render('pages/index');
