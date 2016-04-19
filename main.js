@@ -12,7 +12,7 @@ let segobj = new segments.SegmentService();
 //implement comparable.
 //assign segments - es generator vs async
 //getter for each.
-    conn.login('anchana.rajamathe@kenandy.com', 'KndyNov15', function(err, res) {
+    conn.login('anchana.rajamathe@kenandy.com', 'KndyNov1518U11M0sNYDqpspJfHQATHmUH', function(err, res) {
         if (err) { return console.error(err); }
         //Query custom setting and load segments var in service.
         conn.query('SELECT Id, name,AnchNS__Object_API_Name__c,AnchNS__Segment_Number__c,AnchNS__Accounting_Entry_Field__c,'+
